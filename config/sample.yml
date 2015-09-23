@@ -44,3 +44,15 @@ apiInfoData:
   contact: "sndshd@gmail.com"
   license: "CC0 1.0 Universal"
   licenseUrl: "https://creativecommons.org/publicdomain/zero/1.0/"
+
+server:
+  requestLog:
+    timeZone: UTC
+    appenders:
+     - type: file
+       currentLogFilename: var/output/logs/access.log 
+       threshold: ALL
+       archive: true
+       archivedLogFilenamePattern: var/output/logs/access.%d{yyyy-MM-dd-HH}.log 
+       archivedFileCount: 24
+       timeZone: UTC
