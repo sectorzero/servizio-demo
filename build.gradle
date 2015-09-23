@@ -25,7 +25,9 @@ dependencies {
 
 // main class of the application
 mainClassName = 'com.fooorg.fooproj.app.server.SampleService'
-applicationDefaultJvmArgs = []
+applicationDefaultJvmArgs = [
+        "-Dlogback.configurationFile=./config/sample-logback.xml"
+]
 
 run {
     args 'server', './config/sample.yml'
