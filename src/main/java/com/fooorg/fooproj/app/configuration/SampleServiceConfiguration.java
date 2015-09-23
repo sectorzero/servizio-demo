@@ -2,7 +2,7 @@ package com.fooorg.fooproj.app.configuration;
 
 import io.dropwizard.db.DataSourceFactory;
 
-import org.sectorzero.server.framework.dropwizard.app.configuration.BaseConfiguration;
+import org.sectorzero.servizio.app.configuration.BaseConfiguration;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

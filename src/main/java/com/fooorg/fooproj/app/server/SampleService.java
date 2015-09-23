@@ -12,15 +12,12 @@ import com.fooorg.fooproj.resources.HolaResource;
 import com.fooorg.fooproj.resources.TokensResource;
 
 import io.dropwizard.lifecycle.Managed;
-import org.sectorzero.server.framework.dropwizard.app.BaseService;
+import org.sectorzero.servizio.app.BaseService;
 
 import com.google.inject.AbstractModule;
 
 import com.google.common.collect.ImmutableList;
 import java.util.List;
-
-import com.fooorg.fooproj.core.FooDataAccess;
-import java.util.stream.IntStream;
 
 public class SampleService extends BaseService<SampleServiceConfiguration> {
 
