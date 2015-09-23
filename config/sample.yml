@@ -56,3 +56,11 @@ server:
        archivedLogFilenamePattern: var/output/logs/access.%d{yyyy-MM-dd-HH}.log 
        archivedFileCount: 24
        timeZone: UTC
+
+metrics:
+  reporters:
+    - type: log
+      frequency: 10 seconds
+      logger: "com.fooorg.fooproj.metrics"
+      durationUnit: milliseconds
+      rateUnit: seconds
