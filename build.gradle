@@ -26,7 +26,13 @@ dependencies {
 // main class of the application
 mainClassName = 'com.fooorg.fooproj.app.server.SampleService'
 applicationDefaultJvmArgs = [
-        "-Dlogback.configurationFile=./config/sample-logback.xml"
+        "-Dlogback.configurationFile=./config/sample-logback.xml",
+        "-Duser.timezone=Etc/UTC",
+        "-XX:+UseG1GC",
+        "-verbose:gc",
+        "-XX:+PrintGCDetails", "-XX:+PrintGCDateStamps", "-XX:+PrintGCTimeStamps",
+        "-Xloggc:var/output/logs/gc.log",
+        "-XX:+UseGCLogFileRotation", "-XX:NumberOfGCLogFiles=10", "-XX:GCLogFileSize=256K"
 ]
 
 run {
