@@ -1,0 +1,5 @@
+rootProject.name = 'Servizio-Demo'
+
+include(':Servizio')
+project(':Servizio').projectDir = new File('../Servizio')
+
