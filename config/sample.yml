@@ -36,7 +36,8 @@ dataSourceFactory:
   minIdleTime: 1 minute
 
 swaggerSetup:
-  endpointOverride: localhost
+  endpointOverride: "localhost"
+  #endpointOverride: "localhost:80"
 
 apiInfoData:
   apiVersion: 1.0.0
