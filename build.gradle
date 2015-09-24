@@ -32,7 +32,8 @@ applicationDefaultJvmArgs = [
         "-verbose:gc",
         "-XX:+PrintGCDetails", "-XX:+PrintGCDateStamps", "-XX:+PrintGCTimeStamps",
         "-Xloggc:var/output/logs/gc.log",
-        "-XX:+UseGCLogFileRotation", "-XX:NumberOfGCLogFiles=10", "-XX:GCLogFileSize=256K"
+        "-XX:+UseGCLogFileRotation", "-XX:NumberOfGCLogFiles=10", "-XX:GCLogFileSize=256K",
+        "-Djavax.management.remote.JMXServiceURL=service:jmx:jmxmp://127.0.0.1:58080"
 ]
 
 run {
