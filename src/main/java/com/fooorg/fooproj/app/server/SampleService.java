@@ -17,6 +17,8 @@ import org.sectorzero.servizio.app.BaseService;
 import com.google.inject.AbstractModule;
 
 import com.google.common.collect.ImmutableList;
+import org.sectorzero.servizio.app.configuration.guice.JdbcDataSourceModule;
+
 import java.util.List;
 
 public class SampleService extends BaseService<SampleServiceConfiguration> {
@@ -36,6 +38,7 @@ public class SampleService extends BaseService<SampleServiceConfiguration> {
                 .add(new SampleServiceConfigurationModule())
                 .add(new SampleServiceModule())
                 .add(new FooModule())
+                .add(new JdbcDataSourceModule())
                 .build();
     }
 

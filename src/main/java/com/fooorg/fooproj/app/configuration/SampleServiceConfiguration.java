@@ -36,4 +36,9 @@ public class SampleServiceConfiguration extends BaseConfiguration {
     @JsonProperty
     private DataSourceFactory dataSourceFactory;
 
+    @Valid
+    @NotNull
+    @JsonProperty
+    private String dataSourceName;
+
 }

@@ -6,6 +6,8 @@ fooConfig:
     url: somedb.somedomain.com
     threshold: 3.345
 
+dataSourceName: "Sample Service Jdbc DataSource ( MariaDb )"
+
 dataSourceFactory:
   # the name of your JDBC driver
   driverClass: org.mariadb.jdbc.Driver
