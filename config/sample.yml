@@ -60,6 +60,10 @@ server:
        archivedFileCount: 24
        timeZone: UTC
 
+requestTracing:
+    requestIdContext: "servizio"
+    enableLogging: false
+
 metrics:
   reporters:
     - type: log

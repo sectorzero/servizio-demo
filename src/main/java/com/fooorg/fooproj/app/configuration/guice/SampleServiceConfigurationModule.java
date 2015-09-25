@@ -1,8 +1,10 @@
 package com.fooorg.fooproj.app.configuration.guice;
 
-import com.fooorg.fooproj.app.configuration.SampleServiceConfiguration;
-import com.google.inject.AbstractModule;
+import org.sectorzero.servizio.jersey.RequestTracing;
 
+import com.fooorg.fooproj.app.configuration.SampleServiceConfiguration;
+
+import com.google.inject.AbstractModule;
 import com.google.inject.Provides;
 import com.google.inject.name.Named;
 
@@ -22,6 +24,11 @@ public class SampleServiceConfigurationModule extends AbstractModule {
     @Named("defaultName")
     public String getDefaultName(SampleServiceConfiguration config) {
         return config.getDefaultName();
+    }
+
+    @Provides
+    RequestTracing getRequestTracingConfiguration(SampleServiceConfiguration configuration) {
+        return configuration.getRequestTracing();
     }
 
 }
